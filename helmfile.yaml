@@ -1,0 +1,31 @@
+repositories:
+- name: bitnami
+  url: https://charts.bitnami.com/bitnami
+- name: mogaal
+  url: https://mogaal.github.io/helm-charts/
+
+releases:
+- name: psql
+  namespace: cz1
+  chart: bitnami/postgresql
+  installed: true
+  set:
+  - name: auth.username
+    value: nval_user
+  - name: auth.password
+    value: secret
+  - name: auth.database
+    value: nval
+
+- name: redis
+  namespace: cz1
+  chart: bitnami/redis
+  installed: true
+  set:
+  - name: auth.enabled
+    value: false
+
+- name: adminer
+  namespace: cz1
+  chart: mogaal/adminer
+  installed: true
