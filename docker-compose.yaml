@@ -7,8 +7,8 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=nval
-      - POSTGRES_USER=nval_user
+      - POSTGRES_DB=mydb
+      - POSTGRES_USER=my_user
       - POSTGRES_PASSWORD=secret
     ports:
       - 5432:5432

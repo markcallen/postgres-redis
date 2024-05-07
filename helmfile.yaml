@@ -11,11 +11,11 @@ releases:
   installed: true
   set:
   - name: auth.username
-    value: nval_user
+    value: my_user
   - name: auth.password
     value: secret
   - name: auth.database
-    value: nval
+    value: mydb
 
 - name: redis
   namespace: cz1
