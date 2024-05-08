@@ -5,13 +5,19 @@ from a local machine
 
 ## Setup
 
-Install helmfile
+Install [https://github.com/helmfile/helmfile](helmfile)
 
-Install codezero
+Install [https://docs.codezero.io/guides/installing](codezero)
+
+Make sure you are connected to a kubernetes cluster.
+
+```
+kubectl cluster-info
+```
 
 ## Run
 
-Install postgres, redis and adminer
+Install postgres, redis and adminer into the cz1 namespace.
 
 ```
 helmfile apply
