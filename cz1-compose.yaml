@@ -2,4 +2,5 @@ version: 1.0
 consume:
   primaryNamespace: cz1
   rules:
-    - cz1/*
+    - cz1/psql-postgresql
+    - cz1/redis-master
